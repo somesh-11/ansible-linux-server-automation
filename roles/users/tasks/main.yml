@@ -1,0 +1,14 @@
+---
+- name: Create admin user
+  user:
+    name: adminuser
+    shell: /bin/bash
+    groups: sudo
+    append: yes
+    create_home: yes
+
+- name: Create developer user
+  user:
+    name: developer
+    shell: /bin/bash
+    create_home: yes

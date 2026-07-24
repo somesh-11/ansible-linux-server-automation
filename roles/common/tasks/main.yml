@@ -1,0 +1,16 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install required packages
+  apt:
+    name:
+      - git
+      - curl
+      - vim
+      - htop
+      - tree
+      - unzip
+      - net-tools
+    state: present

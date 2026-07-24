@@ -1,0 +1,11 @@
+---
+- name: Configure Linux Servers
+  hosts: linux_servers
+  become: yes
+
+  roles:
+    - common
+    - users
+    - services
+    - ssh
+    - security
